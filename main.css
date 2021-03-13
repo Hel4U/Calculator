@@ -1,0 +1,68 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#d886ec), to(#0095ffc4));
+  background: linear-gradient(to right, #d886ec, #0095ffc4);
+}
+
+.container-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  -ms-grid-columns: (100px)[4];
+      grid-template-columns: repeat(4, 100px);
+  -ms-grid-rows: (100px)[5];
+      grid-template-rows: repeat(5, 100px);
+}
+
+.container-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 2px solid #fff;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.container-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #000;
+}
+
+.span-row-2 {
+  grid-row: span 2;
+}
+
+.span-col-2 {
+  grid-column: span 2;
+}
+
+.input-screen {
+  grid-column: 1/-1;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+/*# sourceMappingURL=main.css.map */
